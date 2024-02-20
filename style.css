@@ -1,0 +1,146 @@
+body {
+/* Estilos generales */
+font-family: sans-serif;
+color: #333;
+background-color: #fff;
+
+/* Sección de la imagen de cabecera */
+.imagen-cabecera {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen-fondo {
+  opacity: 0.5;
+  margin-top: 0;
+  overflow: hidden;
+  width: 100%; /* Añadimos esta propiedad para que ocupe el ancho completo */
+  height: 33.333vw; /* Añadimos esta propiedad para que tenga un tercio del ancho de la ventana */
+  filter: brightness(0.5); /* Añadimos esta propiedad para que la imagen tenga un 50% de brillo */
+}
+
+.imagen-fondo:hover img {
+  opacity: 0.5;
+  object-fit: cover; /* Añadimos esta propiedad para que la imagen se recorte y se ajuste al contenedor */
+  filter: brightness(1); /* Cambiamos el valor a 1 para que la imagen recupere su brillo original */
+}
+
+/* Sección de los títulos */
+h1.titulo {
+  font-family: 'Inter', 'Lora', 'Playfair Display';
+  font-size: 2em;
+  margin-top: 0;
+}
+
+h2.subtitulo {
+  font-family: 'Raleway', 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Sección del texto */
+p.texto {
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  margin-bottom: 1em;
+}
+
+/* Sección de la lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Sección de los enlaces */
+a {
+  color: #007777;
+  text-decoration: none;
+}
+
+/* Sección del botón de inscripción */
+.btn-inscripcion {
+  background-color: #FFD500;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2em; /* Usamos em en lugar de px para el tamaño de fuente */
+}
+
+/* Sección principal */
+.seccion-principal {
+  padding: 20px;
+  background-color: #FFF5EE;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Sección de los testimonios */
+.seccion-testimonios {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.seccion-testimonios li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Sección de la galería */
+.seccion-galeria {
+  padding: 20px;
+  background-color: #FFD500;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.seccion-galeria ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccion-galeria img {
+  /* Estilos por defecto */
+  max-width: 100%; /* Eliminamos width: auto y height: auto porque son innecesarios */
+  max-height: 300px;
+  object-fit: contain;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  /* Efecto al pasar el cursor */
+  transition: all 0.3s ease-in-out;
+
+  /* Bordes por defecto */
+  border: 1px solid #ddd;
+
+  /* Estilos al pasar el cursor */
+  &:hover {
+    transform: scale(1.1);
+    border-color: #007777;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Sección del pie de página */
+footer {
+  background-color: #007777;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #FFF5EE;
+  text-decoration: none;
+  margin: 0 10px;
+}
