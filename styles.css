@@ -81,7 +81,7 @@ a {
 
 .seccion-testimonios li {
   background-color: #F7EFC3;
-  margin-bottom: 10px;
+  margin: 0 5px 10px;
   padding: 20px; 
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
@@ -90,19 +90,11 @@ a {
   justify-content: center; 
   flex-direction: column; 
   flex: 1;
-  margin: 0 5px;
 }
 
 .seccion-testimonios img {
   width: 80px;
   height: 80px; 
-  border-radius: 50%; 
-  margin-bottom: 15px
-
-.seccion-testimonios img {
-  /* Estilos por defecto */
-  width: 80px; 
-  height: 80px;
   border-radius: 50%; 
   margin-bottom: 15px;
 }
@@ -122,7 +114,6 @@ a {
 }
 
 .seccion-galeria img {
-  /* Estilos por defecto */
   max-width: 100%;
   max-height: 300px;
   object-fit: contain;
@@ -152,20 +143,14 @@ footer a {
 
 /* Media queries para responsividad */
 @media screen and (max-width: 600px) {
-  .seccion-testimonios ul {
-    flex-direction: column;
-  }
-
-  .seccion-testimonios li {
-    flex-basis: 100%; 
-    margin: 5px 0; 
-  }
-
+  .seccion-testimonios ul,
   .seccion-galeria ul {
     flex-direction: column;
   }
 
+  .seccion-testimonios li,
   .seccion-galeria img {
-    max-width: 100%;
+    flex-basis: 100%; 
+    margin: 5px 0; 
   }
 }
