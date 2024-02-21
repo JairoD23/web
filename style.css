@@ -5,7 +5,100 @@ body {
   background-color: #fff;
 }
 
-/* ... (resto del código CSS global) ... */
+/* Sección de la imagen de cabecera */
+.imagen-cabecera {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sección de los títulos */
+h1.titulo {
+  font-family: 'Intro', 'Coves', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+h2.subtitulo {
+  font-family: 'Nagasaki', 'Maddac', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Sección del texto */
+p.texto {
+  font-family: 'Orkney', 'Elppa', sans-serif;
+  margin-bottom: 1em;
+}
+
+/* Sección de la lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Sección de los enlaces */
+a {
+  color: #007777;
+  text-decoration: none;
+}
+
+/* Sección del botón de inscripción */
+.btn-inscripcion {
+  background-color: #FFD500;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2em; /* Usamos em en lugar de px para el tamaño de fuente */
+}
+
+/* Sección principal */
+.seccion-principal {
+  padding: 20px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Sección de los testimonios */
+.seccion-testimonios {
+  padding: 20px;
+  background-color: #FFF; /* Color de fondo de la sección */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.seccion-testimonios ul {
+  display: flex; /* Añadimos display: flex para que los li se coloquen uno al lado del otro */
+  flex-direction: row; /* Añadimos flex-direction: row para que los li se coloquen en la misma fila */
+}
+
+.seccion-testimonios li {
+  background-color: #F7EFC3; /* Color de fondo de las cajas individuales */
+  margin-bottom: 10px;
+  padding: 20px; /* Aumentamos el padding para más espacio alrededor del contenido */
+  border-radius: 10px; /* Añadimos border-radius para bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajustamos el box-shadow para un efecto más suave */
+  display: flex; /* Añadimos display: flex para alinear la foto y el texto */
+  align-items: center; /* Añadimos align-items: center para centrar verticalmente la foto y el texto */
+  justify-content: center; /* Añadimos justify-content: center para centrar horizontalmente la foto y el texto */
+  flex-direction: column; /* Añadimos flex-direction: column para que la foto y el texto se coloquen en la misma columna */
+  flex: 1; /* Añadimos flex: 1 para que ocupen el mismo espacio disponible */
+  margin: 0 5px; /* Añadimos un margen horizontal para que haya un espacio entre ellos */
+}
+
+.seccion-testimonios img {
+  /* Estilos por defecto */
+  width: 80px; /* Ajustamos el ancho para la foto */
+  height: 80px; /* Ajustamos el alto para la foto */
+  border-radius: 50%; /* Añadimos un border-radius de 50% para que la foto sea un círculo */
+  margin-bottom: 15px; /* Añadimos un margen inferior para separar la foto del texto */
+}
 
 /* Sección de la galería */
 .seccion-galeria {
@@ -29,7 +122,45 @@ body {
   margin: 5px;
   border-radius: 5px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease; /* Aseguramos que la transición esté definida para el efecto de zoom */
+}
+
+/* Sección del pie de página */
+footer {
+  background-color: #007777;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #F0F0F0;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Sección de la galería */
+.seccion-galeria {
+  padding: 20px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.seccion-galeria ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccion-galeria img {
+  /* Estilos por defecto */
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease; /* Aseguramos que la transición esté definida para el efecto de zoom */
 }
 
 .seccion-galeria img:hover {
@@ -39,8 +170,7 @@ body {
 /* Sección de los testimonios */
 .seccion-testimonios {
   padding: 20px;
-  /* Se añade un color de fondo */
-  background-color: #FFF;
+  background-color: #FFF; /* Color de fondo de la sección */
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
@@ -58,7 +188,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
-  align-items: center; /* Se centra la imagen verticalmente */
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-basis: calc(33.333% - 10px); /* Ajustamos la base del flex para que se ajuste a tres columnas */
@@ -76,9 +206,6 @@ body {
 @media screen and (max-width: 600px) {
   .seccion-testimonios ul {
     flex-direction: column;
-  
-.seccion-testimonios ul {
-    flex-direction: column;
   }
 
   .seccion-testimonios li {
@@ -87,60 +214,3 @@ body {
   }
 }
 
-/* ... (resto de las media queries) ... */
-
-/* Estilos adicionales para el botón de inscripción */
-.btn-inscripcion {
-  /* Añadimos un color de fondo */
-  background-color: #FFD500;
-  /* Aumentamos el tamaño de la fuente */
-  font-size: 1.4em;
-  /* Añadimos un borde más grueso */
-  border-width: 2px;
-}
-
-/* Estilos adicionales para el pie de página */
-footer {
-  /* Añadimos un color de fondo más oscuro */
-  background-color: #222;
-  /* Añadimos un color de texto más claro */
-  color: #fff;
-}
-
-/* Se añaden prefijos de CSS para mejorar la compatibilidad con navegadores antiguos */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.seccion-testimonios ul {
-  display: -webkit-flex;
-  display: flex;
-}
-
-.seccion-testimonios li {
-  -webkit-flex: 1;
-  flex: 1;
-}
-
-.seccion-galeria ul {
-  display: -webkit-flex;
-  display: flex;
-}
-
-.seccion-galeria img {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
-
-footer {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-}
-
-footer a {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
