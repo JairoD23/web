@@ -1,0 +1,58 @@
+/* Sección de testimonios */
+.seccion-testimonios {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.seccion-testimonios li {
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  background-color: #F0F0F0;
+}
+
+.seccion-testimonios img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.seccion-testimonios img:hover {
+  transform: scale(1.1);
+  border-color: #007777;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos adicionales para un diseño similar a Zapier */
+
+.seccion-testimonios {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.seccion-testimonios li {
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.seccion-testimonios img {
+  border: none;
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+}
+
+.seccion-testimonios p {
+  font-family: 'Orkney', 'Elppa', sans-serif;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
