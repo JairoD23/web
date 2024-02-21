@@ -85,6 +85,8 @@ a {
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aumentamos el box-shadow para que tenga un efecto de sombra más pronunciado */
   display: flex; /* Añadimos display: flex para alinear la foto y el texto */
   align-items: center; /* Añadimos align-items: center para centrar verticalmente la foto y el texto */
+  justify-content: center; /* Añadimos justify-content: center para centrar horizontalmente la foto y el texto */
+  flex-direction: column; /* Añadimos flex-direction: column para que la foto y el texto se coloquen en la misma columna */
   flex: 1; /* Añadimos flex: 1 para que ocupen el mismo espacio disponible */
   margin: 0 5px; /* Añadimos un margen horizontal para que haya un espacio entre ellos */
 }
@@ -95,6 +97,7 @@ a {
   height: 50px; /* Añadimos un alto fijo para la foto */
   border-radius: 50%; /* Añadimos un border-radius de 50% para que la foto sea un círculo */
   margin-right: 10px; /* Añadimos un margen derecho para separar la foto del texto */
+  margin-bottom: 10px; /* Añadimos un margen inferior para separar la foto del texto */
 
   /* Efecto al pasar el cursor */
   transition: all 0.3s ease-in-out;
@@ -160,6 +163,7 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
 
 /* Media queries para pantallas pequeñas (menores a 600px) */
 @media screen and (max-width: 600px) {
