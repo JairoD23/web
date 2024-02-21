@@ -73,13 +73,20 @@ a {
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
+.seccion-testimonios ul {
+  display: flex; /* Añadimos display: flex para que los li se coloquen uno al lado del otro */
+  flex-direction: row; /* Añadimos flex-direction: row para que los li se coloquen en la misma fila */
+}
+
 .seccion-testimonios li {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 0; /* Cambiamos el border-radius a 0 para que sean burbujas cuadradas */
-  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aumentamos el box-shadow para que tenga un efecto de sombra más pronunciado */
   display: flex; /* Añadimos display: flex para alinear la foto y el texto */
   align-items: center; /* Añadimos align-items: center para centrar verticalmente la foto y el texto */
+  flex: 1; /* Añadimos flex: 1 para que ocupen el mismo espacio disponible */
+  margin: 0 5px; /* Añadimos un margen horizontal para que haya un espacio entre ellos */
 }
 
 .seccion-testimonios img {
