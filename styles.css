@@ -5,6 +5,25 @@ body {
   color: #333;
   background-color: #fff;
 }
+/* Sección menú */
+#menu-principal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#menu-principal li a {
+  text-decoration: none;
+  color: #007777; /* Cambia el color según tu esquema de diseño */
+  padding: 10px 15px;
+  display: block;
+}
+
+#menu-principal li a:hover {
+  background-color: #FFD500; /* Color al pasar el mouse */
+}
+
 
 /* Sección de la imagen de cabecera */
 .imagen-cabecera {
