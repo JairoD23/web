@@ -56,3 +56,112 @@
   margin-bottom: 0;
   line-height: 1.5em;
 }
+
+/*modicado de sección de testimonio */
+/* Estilos generales */
+body {
+  font-family: 'Glober', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Sección de la imagen de cabecera */
+.imagen-cabecera {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sección de los títulos */
+h1.titulo {
+  font-family: 'Intro', 'Coves', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+h2.subtitulo {
+  font-family: 'Nagasaki', 'Maddac', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Sección del texto */
+p.texto {
+  font-family: 'Orkney', 'Elppa', sans-serif;
+  margin-bottom: 1em;
+}
+
+/* Sección de la lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Sección de los enlaces */
+a {
+  color: #007777;
+  text-decoration: none;
+}
+
+/* Sección del botón de inscripción */
+.btn-inscripcion {
+  background-color: #FFD500;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2em;
+  /* Usamos em en lugar de px para el tamaño de fuente */
+}
+
+/* Sección principal */
+.seccion-principal {
+  padding: 20px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Sección de los testimonios */
+.seccion-testimonios {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.seccion-testimonios ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.seccion-testimonios li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.seccion-testimonios img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.seccion-testimonios img:hover {
+  transform: scale(1.1);
+  border-color: #007777;
+  box-shadow: 0 0 5px rgba(0, 0, 0,
+
+                           
