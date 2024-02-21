@@ -10,21 +10,6 @@ background-color: #fff;
   height: auto;
 }
 
-.imagen-fondo {
-  opacity: 0.5;
-  margin-top: 0;
-  overflow: hidden;
-  width: 100%; /* Añadimos esta propiedad para que ocupe el ancho completo */
-  height: 33.333vw; /* Añadimos esta propiedad para que tenga un tercio del ancho de la ventana */
-  filter: brightness(0.5); /* Añadimos esta propiedad para que la imagen tenga un 50% de brillo */
-}
-
-.imagen-fondo:hover img {
-  opacity: 0.5;
-  object-fit: cover; /* Añadimos esta propiedad para que la imagen se recorte y se ajuste al contenedor */
-  filter: brightness(1); /* Cambiamos el valor a 1 para que la imagen recupere su brillo original */
-}
-
 /* Sección de los títulos */
 h1.titulo {
   font-family: 'Inter', 'Lora', 'Playfair Display';
