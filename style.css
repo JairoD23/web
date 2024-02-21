@@ -1,11 +1,9 @@
-
 /* Estilos generales */
-
 body {
-
-font-family: 'Glober', sans-serif;
-color: #333;
-background-color: #fff;
+  font-family: 'Glober', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
 
 /* Sección de la imagen de cabecera */
 .imagen-cabecera {
@@ -70,7 +68,7 @@ a {
 /* Sección de los testimonios */
 .seccion-testimonios {
   padding: 20px;
-  background-color: #FFF;
+  background-color: #FFF; /* Color de fondo de la sección */
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
@@ -81,36 +79,25 @@ a {
 }
 
 .seccion-testimonios li {
-  background-color: #F7EFC3
+  background-color: #F7EFC3; /* Color de fondo de las cajas individuales */
   margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 0; /* Cambiamos el border-radius a 0 para que sean burbujas cuadradas */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aumentamos el box-shadow para que tenga un efecto de sombra más pronunciado */
+  padding: 20px; /* Aumentamos el padding para más espacio alrededor del contenido */
+  border-radius: 10px; /* Añadimos border-radius para bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajustamos el box-shadow para un efecto más suave */
   display: flex; /* Añadimos display: flex para alinear la foto y el texto */
   align-items: center; /* Añadimos align-items: center para centrar verticalmente la foto y el texto */
+  justify-content: center; /* Añadimos justify-content: center para centrar horizontalmente la foto y el texto */
+  flex-direction: column; /* Añadimos flex-direction: column para que la foto y el texto se coloquen en la misma columna */
   flex: 1; /* Añadimos flex: 1 para que ocupen el mismo espacio disponible */
   margin: 0 5px; /* Añadimos un margen horizontal para que haya un espacio entre ellos */
 }
 
 .seccion-testimonios img {
   /* Estilos por defecto */
-  width: 50px; /* Añadimos un ancho fijo para la foto */
-  height: 50px; /* Añadimos un alto fijo para la foto */
+  width: 80px; /* Ajustamos el ancho para la foto */
+  height: 80px; /* Ajustamos el alto para la foto */
   border-radius: 50%; /* Añadimos un border-radius de 50% para que la foto sea un círculo */
-  margin-right: 10px; /* Añadimos un margen derecho para separar la foto del texto */
-
-  /* Efecto al pasar el cursor */
-  transition: all 0.3s ease-in-out;
-
-  /* Bordes por defecto */
-  border: 1px solid #ddd;
-
-  /* Estilos al pasar el cursor */
-  &:hover {
-    transform: scale(1.1);
-    border-color: #007777;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
+  margin-bottom: 15px; /* Añadimos un margen inferior para separar la foto del texto */
 }
 
 /* Sección de la galería */
@@ -129,25 +116,12 @@ a {
 
 .seccion-galeria img {
   /* Estilos por defecto */
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 300px;
   object-fit: contain;
   margin: 5px;
   border-radius: 5px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
-
-  /* Efecto al pasar el cursor */
-  transition: all 0.3s ease-in-out;
-
-  /* Bordes por defecto */
-  border: 1px solid #ddd;
-
-  /* Estilos al pasar el cursor */
-  &:hover {
-    transform: scale(1.1);
-    border-color: #007777;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
 }
 
 /* Sección del pie de página */
@@ -163,27 +137,3 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
-
-/* Media queries para pantallas pequeñas (menores a 600px) */
-@media screen and (max-width: 600px) {
-  /* Cambiamos la dirección del flex a columna para que los testimonios se apilen verticalmente */
-  .seccion-testimonios ul {
-    flex-direction: column;
-  }
-
-  /* Cambiamos el margen de los testimonios para que ocupen todo el ancho de la pantalla */
-  .seccion-testimonios li {
-    margin: 0;
-  }
-}
-
-/* Media queries para pantallas medianas (entre 600px y 900px) */
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* Cambiamos el flex a 50% para que los testimonios se muestren en dos columnas */
-
-  .seccion-testimonios li {
-    flex: 50%;
-  }
-}
-
-                           
