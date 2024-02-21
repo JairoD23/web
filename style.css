@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
   font-family: 'Glober', sans-serif;
   color: #333;
@@ -54,7 +53,7 @@ a {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  font-size: 1.2em; /* Usamos em en lugar de px para el tamaño de fuente */
+  font-size: 1.2em;
 }
 
 /* Sección principal */
@@ -74,30 +73,36 @@ a {
 }
 
 .seccion-testimonios ul {
-  display: flex; /* Añadimos display: flex para que los li se coloquen uno al lado del otro */
-  flex-direction: row; /* Añadimos flex-direction: row para que los li se coloquen en la misma fila */
+  display: flex; 
+  flex-direction: row;
 }
 
 .seccion-testimonios li {
-  background-color: #F7EFC3; /* Color de fondo de las cajas individuales */
+  background-color: #F7EFC3;
   margin-bottom: 10px;
-  padding: 20px; /* Aumentamos el padding para más espacio alrededor del contenido */
-  border-radius: 10px; /* Añadimos border-radius para bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajustamos el box-shadow para un efecto más suave */
-  display: flex; /* Añadimos display: flex para alinear la foto y el texto */
-  align-items: center; /* Añadimos align-items: center para centrar verticalmente la foto y el texto */
-  justify-content: center; /* Añadimos justify-content: center para centrar horizontalmente la foto y el texto */
-  flex-direction: column; /* Añadimos flex-direction: column para que la foto y el texto se coloquen en la misma columna */
-  flex: 1; /* Añadimos flex: 1 para que ocupen el mismo espacio disponible */
-  margin: 0 5px; /* Añadimos un margen horizontal para que haya un espacio entre ellos */
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column; 
+  flex: 1;
+  margin: 0 5px;
 }
 
 .seccion-testimonios img {
+  width: 80px;
+  height: 80px; 
+  border-radius: 50%; 
+  margin-bottom: 15px
+
+.seccion-testimonios img {
   /* Estilos por defecto */
-  width: 80px; /* Ajustamos el ancho para la foto */
-  height: 80px; /* Ajustamos el alto para la foto */
-  border-radius: 50%; /* Añadimos un border-radius de 50% para que la foto sea un círculo */
-  margin-bottom: 15px; /* Añadimos un margen inferior para separar la foto del texto */
+  width: 80px; 
+  height: 80px;
+  border-radius: 50%; 
+  margin-bottom: 15px;
 }
 
 /* Sección de la galería */
@@ -122,6 +127,11 @@ a {
   margin: 5px;
   border-radius: 5px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.seccion-galeria img:hover {
+  transform: scale(1.1); 
 }
 
 /* Sección del pie de página */
@@ -138,70 +148,6 @@ footer a {
   margin: 0 10px;
 }
 
-/* Sección de la galería */
-.seccion-galeria {
-  padding: 20px;
-  background-color: #F0F0F0;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
-
-.seccion-galeria ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.seccion-galeria img {
-  /* Estilos por defecto */
-  max-width: 100%;
-  max-height: 300px;
-  object-fit: contain;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease; /* Aseguramos que la transición esté definida para el efecto de zoom */
-}
-
-.seccion-galeria img:hover {
-  transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
-}
-
-/* Sección de los testimonios */
-.seccion-testimonios {
-  padding: 20px;
-  background-color: #FFF; /* Color de fondo de la sección */
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
-
-.seccion-testimonios ul {
-  display: flex;
-  flex-wrap: wrap; /* Aseguramos que los elementos se envuelvan en pantallas pequeñas */
-  justify-content: space-between;
-}
-
-.seccion-testimonios li {
-  background-color: #F7EFC3; /* Color de fondo de las cajas individuales */
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-basis: calc(33.333% - 10px); /* Ajustamos la base del flex para que se ajuste a tres columnas */
-  margin: 5px;
-}
-
-.seccion-testimonios img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
 /* Media queries para responsividad */
 @media screen and (max-width: 600px) {
   .seccion-testimonios ul {
@@ -209,8 +155,15 @@ footer a {
   }
 
   .seccion-testimonios li {
-    flex-basis: 100%; /* Los elementos ocupan todo el ancho en pantallas pequeñas */
-    margin: 5px 0; /* Ajustamos los márgenes para pantallas pequeñas */
+    flex-basis: 100%; 
+    margin: 5px 0; 
+  }
+
+  .seccion-galeria ul {
+    flex-direction: column;
+  }
+
+  .seccion-galeria img {
+    max-width: 100%;
   }
 }
-
