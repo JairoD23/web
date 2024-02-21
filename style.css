@@ -54,7 +54,7 @@ a {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.2em; /* Usamos em en lugar de px para el tamaño de fuente */
 }
 
 /* Sección principal */
@@ -76,8 +76,31 @@ a {
 .seccion-testimonios li {
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 0; /* Cambiamos el border-radius a 0 para que sean burbujas cuadradas */
   box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  display: flex; /* Añadimos display: flex para alinear la foto y el texto */
+  align-items: center; /* Añadimos align-items: center para centrar verticalmente la foto y el texto */
+}
+
+.seccion-testimonios img {
+  /* Estilos por defecto */
+  width: 50px; /* Añadimos un ancho fijo para la foto */
+  height: 50px; /* Añadimos un alto fijo para la foto */
+  border-radius: 50%; /* Añadimos un border-radius de 50% para que la foto sea un círculo */
+  margin-right: 10px; /* Añadimos un margen derecho para separar la foto del texto */
+
+  /* Efecto al pasar el cursor */
+  transition: all 0.3s ease-in-out;
+
+  /* Bordes por defecto */
+  border: 1px solid #ddd;
+
+  /* Estilos al pasar el cursor */
+  &:hover {
+    transform: scale(1.1);
+    border-color: #007777;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Sección de la galería */
@@ -130,3 +153,4 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
