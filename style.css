@@ -161,3 +161,25 @@ footer a {
   margin: 0 10px;
 }
 
+/* Media queries para pantallas pequeñas (menores a 600px) */
+@media screen and (max-width: 600px) {
+  /* Cambiamos la dirección del flex a columna para que los testimonios se apilen verticalmente */
+  .seccion-testimonios ul {
+    flex-direction: column;
+  }
+
+  /* Cambiamos el margen de los testimonios para que ocupen todo el ancho de la pantalla */
+  .seccion-testimonios li {
+    margin: 0;
+  }
+}
+
+/* Media queries para pantallas medianas (entre 600px y 900px) */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* Cambiamos el flex a 50% para que los testimonios se muestren en dos columnas */
+  .seccion-testimonios li {
+    flex: 50%;
+  }
+}
+
+
