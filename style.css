@@ -29,7 +29,7 @@ body {
   margin: 5px;
   border-radius: 5px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease; /* Aseguramos que la transición esté definida para el efecto de zoom */
+  transition: all 0.3s ease; /* Aseguramos que la transición esté definida para el efecto de zoom */
 }
 
 .seccion-galeria img:hover {
@@ -39,7 +39,8 @@ body {
 /* Sección de los testimonios */
 .seccion-testimonios {
   padding: 20px;
-  background-color: #FFF; /* Color de fondo de la sección */
+  /* Se añade un color de fondo */
+  background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
@@ -57,7 +58,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
-  align-items: center;
+  align-items: center; /* Se centra la imagen verticalmente */
   justify-content: center;
   flex-direction: column;
   flex-basis: calc(33.333% - 10px); /* Ajustamos la base del flex para que se ajuste a tres columnas */
@@ -75,6 +76,9 @@ body {
 @media screen and (max-width: 600px) {
   .seccion-testimonios ul {
     flex-direction: column;
+  
+.seccion-testimonios ul {
+    flex-direction: column;
   }
 
   .seccion-testimonios li {
@@ -84,3 +88,59 @@ body {
 }
 
 /* ... (resto de las media queries) ... */
+
+/* Estilos adicionales para el botón de inscripción */
+.btn-inscripcion {
+  /* Añadimos un color de fondo */
+  background-color: #FFD500;
+  /* Aumentamos el tamaño de la fuente */
+  font-size: 1.4em;
+  /* Añadimos un borde más grueso */
+  border-width: 2px;
+}
+
+/* Estilos adicionales para el pie de página */
+footer {
+  /* Añadimos un color de fondo más oscuro */
+  background-color: #222;
+  /* Añadimos un color de texto más claro */
+  color: #fff;
+}
+
+/* Se añaden prefijos de CSS para mejorar la compatibilidad con navegadores antiguos */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.seccion-testimonios ul {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.seccion-testimonios li {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.seccion-galeria ul {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.seccion-galeria img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+footer {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+footer a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
