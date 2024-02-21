@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
 
-font-family: sans-serif;
+font-family: 'Glober', sans-serif;
 color: #333;
 background-color: #fff;
 
@@ -13,20 +13,20 @@ background-color: #fff;
 
 /* Sección de los títulos */
 h1.titulo {
-  font-family: 'Inter', 'Lora', 'Playfair Display';
+  font-family: 'Intro', 'Coves', sans-serif;
   font-size: 2em;
   margin-top: 0;
 }
 
 h2.subtitulo {
-  font-family: 'Raleway', 'Montserrat', sans-serif;
+  font-family: 'Nagasaki', 'Maddac', sans-serif;
   font-size: 1.5em;
   margin-bottom: 1em;
 }
 
 /* Sección del texto */
 p.texto {
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Orkney', 'Elppa', sans-serif;
   margin-bottom: 1em;
 }
 
@@ -54,15 +54,15 @@ a {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  font-size: 1.2em; /* Usamos em en lugar de px para el tamaño de fuente */
+  font-size: 1.2em;
 }
 
 /* Sección principal */
 .seccion-principal {
   padding: 20px;
-  background-color: #FFF5EE;
+  background-color: #F0F0F0;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
 /* Sección de los testimonios */
@@ -70,22 +70,22 @@ a {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
 .seccion-testimonios li {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
 }
 
 /* Sección de la galería */
 .seccion-galeria {
   padding: 20px;
-  background-color: #FFF5EE;
+  background-color: #F0F0F0;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
 .seccion-galeria ul {
@@ -96,12 +96,12 @@ a {
 
 .seccion-galeria img {
   /* Estilos por defecto */
-  max-width: 100%; /* Eliminamos width: auto y height: auto porque son innecesarios */
+  max-width: 100%; 
   max-height: 300px;
   object-fit: contain;
   margin: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
 
   /* Efecto al pasar el cursor */
   transition: all 0.3s ease-in-out;
@@ -113,7 +113,7 @@ a {
   &:hover {
     transform: scale(1.1);
     border-color: #007777;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -126,7 +126,7 @@ footer {
 }
 
 footer a {
-  color: #FFF5EE;
+  color: #F0F0F0;
   text-decoration: none;
   margin: 0 10px;
 }
