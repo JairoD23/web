@@ -1,8 +1,10 @@
-/* Estilo base */
+/*Declaración general */
+
 body {
   font-family: 'Glober', sans-serif;
   color: #333;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 /* Sección de la imagen de cabecera */
@@ -12,20 +14,20 @@ body {
 }
 
 /* Sección de los títulos */
-h1.titulo {
+h1 {
   font-family: 'Intro', 'Coves', sans-serif;
   font-size: 2em;
   margin-top: 0;
 }
 
-h2.subtitulo {
+h2 {
   font-family: 'Nagasaki', 'Maddac', sans-serif;
   font-size: 1.5em;
   margin-bottom: 1em;
 }
 
 /* Sección del texto */
-p.texto {
+p {
   font-family: 'Orkney', 'Elppa', sans-serif;
   margin-bottom: 1em;
 }
@@ -57,28 +59,20 @@ a {
   font-size: 1.2em;
 }
 
-/* Sección principal */
-.seccion-principal {
-  padding: 20px;
-  background-color: #F0F0F0;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
-
 /* Sección de los testimonios */
-.seccion-testimonios {
+.testimonios {
   padding: 20px;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
-.seccion-testimonios ul {
+.testimonios ul {
   display: flex; 
   flex-direction: row;
 }
 
-.seccion-testimonios li {
+.testimonial-card {
   background-color: #F7EFC3;
   margin: 0 5px 10px;
   padding: 20px; 
@@ -91,7 +85,7 @@ a {
   flex: 1;
 }
 
-.seccion-testimonios img {
+.testimonial-card img {
   width: 80px; 
   height: 80px;
   border-radius: 50%; 
@@ -99,20 +93,19 @@ a {
 }
 
 /* Sección de la galería */
-.seccion-galeria {
+.galeria {
   padding: 20px;
   background-color: #F0F0F0;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
+  box-shadow: 0
 
-.seccion-galeria ul {
+.galeria ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.seccion-galeria img {
+.galeria img {
   max-width: 100%;
   max-height: 300px;
   object-fit: contain;
@@ -122,7 +115,7 @@ a {
   transition: transform 0.3s ease;
 }
 
-.seccion-galeria img:hover {
+.galeria img:hover {
   transform: scale(1.1); 
 }
 
@@ -142,14 +135,76 @@ footer a {
 
 /* Media queries para responsividad */
 @media screen and (max-width: 600px) {
-  .seccion-testimonios ul,
-  .seccion-galeria ul {
+  .testimonios ul,
+  .galeria ul {
     flex-direction: column;
   }
 
-  .seccion-testimonios li,
-  .seccion-galeria img {
+  .testimonios .testimonial-card,
+  .galeria img {
     flex-basis: 100%; 
     margin: 5px 0; 
+  }
+
+  .testimonios .testimonial-card img {
+    margin-bottom: 10px;
+  }
+}
+
+/* Variables para colores */
+$color-primary: #FFD500;
+$color-secondary: #333;
+$color-background: #F0F0F0;
+
+/* Estilos adicionales */
+.btn-inscripcion {
+  background-color: $color-primary;
+  color: $color-secondary;
+}
+
+.seccion-testimonios {
+  background-color: $color-background;
+}
+
+.seccion-galeria {
+  background-color: $color-background;
+}
+
+/* Clases para elementos HTML comunes */
+.titulo {
+  font-family: 'Intro', 'Coves', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.subtitulo {
+  font-family: 'Nagasaki', 'Maddac', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.texto {
+  font-family: 'Orkney', 'Elppa', sans-serif;
+  margin-bottom: 1em;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.enlaces {
+  color: #007777;
+  text-decoration: none;
+}
+
+/* Media queries adicionales para mejorar la visualización en dispositivos móviles */
+@media screen and (max-width: 400px) {
+  .seccion-testimonios .testimonial-card {
+    width: 100%;
+  }
+
+  .seccion-galeria img {
+    width: 100%;
   }
 }
