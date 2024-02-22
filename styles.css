@@ -11,8 +11,8 @@ nav.menu {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
+  background-color: #000; /* Fondo negro para mayor contraste */
+  color: #fff; /* Texto blanco para mayor visibilidad */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed; /* Fijo en la parte superior */
   width: 100%; /* Ancho completo */
@@ -32,7 +32,7 @@ nav.menu {
   padding: 0 20px;
   font-size: 16px;
   text-decoration: none;
-  color: #fff; /* Texto blanco */
+  color: #fff; /* Texto blanco para mayor visibilidad */
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -62,8 +62,21 @@ nav.menu {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
+    background-color: #000; /* Fondo negro para los elementos desplegados */
+  }
+
+  .menu-li {
+    width: 100%; /* Ancho completo para los elementos desplegados */
+    color: #fff; /* Texto blanco para mayor visibilidad */
+    background-color: transparent; /* Fondo transparente para los elementos desplegados */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+
+  .menu-li:hover {
+    background-color: #333; /* Fondo gris oscuro al pasar el cursor */
   }
 }
+
 
 
 /* Sección de la imagen de cabecera */
