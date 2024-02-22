@@ -5,23 +5,64 @@ body {
   color: #333;
   background-color: #fff;
 }
-/* Sección menú */
-#menu-principal {
-  list-style: none;
+/* Estilos generales del menú */
+nav.menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fijo en la parte superior */
+  width: 100%; /* Ancho completo */
+  top: 0; /* Posición superior */
+  z-index: 1000; /* Asegura que el menú se muestre sobre otros elementos */
+}
+
+/* Estilos de la lista con los elementos del menú */
+.menu-ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-#menu-principal li a {
+.menu-li {
+  padding: 0 20px;
+  font-size: 16px;
   text-decoration: none;
-  color: #007777; /* Cambia el color según tu esquema de diseño */
-  padding: 10px 15px;
-  display: block;
+  color: #fff; /* Texto blanco */
+  transition: background-color 0.2s ease-in-out;
 }
 
-#menu-principal li a:hover {
-  background-color: #FFD500; /* Color al pasar el mouse */
+.menu-li:hover {
+  background-color: #333; /* Fondo gris oscuro al pasar el cursor */
+}
+
+@media screen and (max-width: 768px) {
+  .menu-ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Oculto por defecto */
+  }
+
+  .menu-btn {
+    display: block; /* Mostrar botón de hamburguesa */
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-btn:focus + .menu-ul,
+  .menu-btn:hover + .menu-ul {
+    display: flex; /* Mostrar menú al interactuar con el botón */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
 }
 
 
